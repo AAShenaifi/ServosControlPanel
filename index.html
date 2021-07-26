@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Robot Arm</h1>
+
+    <div class="container">
+        <div class="rightSide">
+            <h2>Servo Motors Control</h2>
+            <img src="https://i.postimg.cc/Gh7XpPZG/robot-arm-gray1.png" alt="">
+        </div>
+
+    
+
+    <form action="connect.php" method="POST">
+
+        <div class="leftSide">
+
+            <div class="firstMotor" id="sliderSameStyle">
+            <h3>End Effector - First Motor</h3>
+            <input type="range" min=0 max=180 value=90 id=0 name="M1" class="slider" onchange=setVal1(this.id)>
+            <p>Degree: <span name="d1"></span></p>
+            </div>
+
+            <div class="secondMotor" id="sliderSameStyle">
+            <h3>Wrist - Second Motor</h3>
+            <input type="range" min=0 max=180 value=90 id=0 name="M2" class="slider" onchange=setVal2(this.id)>
+            <p>Degree: <span name="d2"></span></p>
+        </div>
+
+            <div class="thirdMotor" id="sliderSameStyle">
+                <h3>Elbow - Third Motor</h3>
+            <input type="range" min=0 max=180 value=90 id=0 name="M3" class="slider" onchange=setVal3(this.id)>
+            <p>Degree: <span name="d3"></span></p>
+        </div>
+
+            <div class="fourtMotor" id="sliderSameStyle">
+                <h3>Shoulder - Fourth Motor</h3>
+            <input type="range" min=0 max=180 value=90 id=0 name="M4" class="slider" onchange=setVal4(this.id)>
+            <p>Degree: <span name="d4"></span></p>
+        </div>
+
+            <div class="fifthMotor" id="sliderSameStyle">
+                <h3>Base - Fifth Motor</h3>
+            <input type="range" min=0 max=180 value=90 id=0 name="M5" class="slider" onchange=setVal5(this.id)>
+            <p>Degree: <span name="d5"></span></p>
+        </div>
+
+            <button type="submit" id="save">Save</button>
+            <button type="submit" id="run">Run</button>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
