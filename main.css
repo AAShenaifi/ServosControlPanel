@@ -1,0 +1,170 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+background-repeat: repeat ;
+  background-size:324px ;
+  background-color: fixed ;
+  background-image:url("https://i.postimg.cc/LsbnwwPn/IDR-THEME-NTP-BACKGROUND.png");
+
+}
+
+
+.container {
+    height: 650px;
+    width: 1200px;
+    background-color: #a4a4a4;
+    box-shadow: 0 0 50px rgb(68 68 68);
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+        font-size: 80px;
+    color: rgb(71,111,155,255);
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+.container .rightSide {
+    flex-direction: column;
+        top: 25px;
+   margin-left: 650px;
+    margin-right: 0px;
+
+}
+h2 {
+    color:rgb(71,111,155,255);
+    font-size: 70px;
+    text-align: left;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-top: 5px;
+    margin-left : 100px;
+    margin-right: 10px;
+      
+}
+
+.container .rightSide img {
+    position: relative;
+    width: 256px;
+    float: right;
+    margin-top: 10px;
+    margin-right: -430px;
+}
+*/
+
+
+h3 {
+    color: #16222e;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 15px;
+    text-align: left;
+    margin-right: -5px;
+    font-family: Russo One;
+}
+
+p {
+    color: rgb(38 60 84);
+    text-align: left;
+    font-weight: bold;
+    font-size: 10px;
+    opacity: 0.6;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+
+
+
+.container .leftSide { 
+    flex-direction: column;
+    top: -5px;
+   margin-left: -500px;
+    margin-right: 500px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(45deg,#679ecc,#476f9b);
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 12px;
+    box-shadow: 0px 1px 10px 1px black;
+    position: relative;
+    left:-500;
+
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+
+.slider::after {
+    content: "180";
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    left: 95%;
+    top: 15px;
+}
+
+.slider::before {
+    content: "0";
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+}
+
+button {
+    color: rgb(71,111,155,255);
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: Russo One;
+}
+
+button:hover {
+    opacity: 0.8;
+} 
+
+#saveButton {
+    width: 48%;
+    float: right;
+
+    left :-255px;
+    right:25px;
+}
+
+
+#runButton {
+    width: 48%;
+    float: left;
+}
